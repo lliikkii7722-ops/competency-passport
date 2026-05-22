@@ -1,0 +1,82 @@
+# ============================================
+# SERVER CONFIGURATION
+# ============================================
+server:
+  port: 9090
+  servlet:
+    context-path: /api
+
+# ============================================
+# SPRING APPLICATION
+# ============================================
+spring:
+  application:
+    name: competency-passport-api
+
+  # ==========================================
+  # DATABASE CONFIGURATION (MySQL)
+  # ==========================================
+  datasource:
+    url: jdbc:mysql://localhost:3306/competency_passport?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: "@123Chinnu"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # ==========================================
+  # JPA / HIBERNATE
+  # ==========================================
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  # ==========================================
+  # FILE UPLOAD
+  # ==========================================
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# ============================================
+# JWT CONFIGURATION
+# ============================================
+jwt:
+  secret: competency-passport-secret-key-2024-make-it-long-and-secure-at-least-32-chars
+  expiration: 86400000
+
+# ============================================
+# FILE STORAGE
+# ============================================
+file:
+  upload-dir: ./uploads
+  base-url: http://localhost:9090/api/files
+
+# ============================================
+# FRONTEND URL (for CORS)
+# ============================================
+frontend:
+  url: http://localhost:5173
+
+# ============================================
+# LOGGING
+# ============================================
+logging:
+  level:
+    com.passport: DEBUG
+    org.springframework.security: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# ============================================
+# CUSTOM SETTINGS
+# ============================================
+app:
+  name: Competency Passport
+  version: 1.0.0
+  allowed-origins: http://localhost:5173,http://localhost:3000
