@@ -2,7 +2,7 @@
 # SERVER CONFIGURATION
 # ============================================
 server:
-  port: 9090
+  port: ${PORT:8080}
   servlet:
     context-path: /api
 
@@ -14,12 +14,12 @@ spring:
     name: competency-passport-api
 
   # ==========================================
-  # DATABASE CONFIGURATION (MySQL)
+  # DATABASE CONFIGURATION
   # ==========================================
   datasource:
-    url: jdbc:mysql://localhost:3306/competency_passport?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: root
-    password: "@123Chinnu"
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/competency_passport?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:@123Chinnu}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   # ==========================================
@@ -32,7 +32,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.MySQLDialect
 
   # ==========================================
   # FILE UPLOAD
@@ -47,7 +46,7 @@ spring:
 # JWT CONFIGURATION
 # ============================================
 jwt:
-  secret: competency-passport-secret-key-2024-make-it-long-and-secure-at-least-32-chars
+  secret: ${JWT_SECRET:competency-passport-secret-key-2024-make-it-long-and-secure-at-least-32-chars}
   expiration: 86400000
 
 # ============================================
@@ -55,13 +54,13 @@ jwt:
 # ============================================
 file:
   upload-dir: ./uploads
-  base-url: http://localhost:9090/api/files
+  base-url: ${FILE_BASE_URL:http://localhost:9090/api/files}
 
 # ============================================
 # FRONTEND URL (for CORS)
 # ============================================
 frontend:
-  url: http://localhost:5173
+  url: ${FRONTEND_URL:http://localhost:5173}
 
 # ============================================
 # LOGGING
@@ -79,4 +78,4 @@ logging:
 app:
   name: Competency Passport
   version: 1.0.0
-  allowed-origins: http://localhost:5173,http://localhost:3000
+  allowed-origins: ${ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}
