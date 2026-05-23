@@ -150,55 +150,9 @@ MySQL Database (Railway)
 
 ---
 
-# Screenshots
+## Application Screenshots
 
-## Login Page
-
-![Login Page](./screenshots/login.png)
-
-## Registration Page
-
-![Registration Page](./screenshots/register.png)
-
-## Dashboard
-
-![Dashboard](./screenshots/dashboard.png)
-
-## Profile Page
-
-![Profile Page](./screenshots/profile.png)
-
-## Education Module
-
-![Education Module](./screenshots/education.png)
-
-## Experience Module
-
-![Experience Module](./screenshots/experience.png)
-
-## Skills Module
-
-![Skills Module](./screenshots/skills.png)
-
-## Projects Module
-
-![Projects Module](./screenshots/projects.png)
-
-## Certificates Module
-
-![Certificates Module](./screenshots/certificates.png)
-
-## Achievement Badges
-
-![Achievement Badges](./screenshots/badges.png)
-
-## AI Skill Gap Analyzer
-
-![AI Skill Gap Analyzer](./screenshots/ai-analyzer.png)
-
-## Mock Interview Simulator
-
-![Mock Interview Simulator](./screenshots/mock-interview.png)
+<img width="1536" height="1024" alt="ChatGPT Image May 23, 2026, 01_53_50 PM" src="https://github.com/user-attachments/assets/5201ff6d-f57e-4e06-b947-699eede36659" />
 
 ---
 
