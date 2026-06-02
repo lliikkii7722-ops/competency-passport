@@ -1,5 +1,17 @@
 # Competency Passport
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-blue)](https://competency-passport.netlify.app)
+[![Backend API](https://img.shields.io/badge/API-Render-purple)](https://competency-passport-api.onrender.com)
+[![Frontend](https://img.shields.io/badge/Frontend-React-blue)]()
+[![Backend](https://img.shields.io/badge/Backend-Spring%20Boot-brightgreen)]()
+[![Database](https://img.shields.io/badge/Database-MySQL-orange)]()
+[![Security](https://img.shields.io/badge/Security-JWT-black)]()
+[![REST API](https://img.shields.io/badge/API-REST-red)]()
+[![Deployment](https://img.shields.io/badge/Deployment-Netlify%20%7C%20Render-blueviolet)]()
+[![AI Tools](https://img.shields.io/badge/AI-Skill%20Gap%20Analysis-purple)]()
+[![Mock Interview](https://img.shields.io/badge/Feature-Mock%20Interview-success)]()
+
+
 A full-stack portfolio and competency management platform designed for students and job seekers to build professional digital profiles, showcase achievements, and prepare for placements through AI-assisted tools.
 
 ---
